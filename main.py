@@ -13,13 +13,12 @@ for i in range(9, 0, -1):
 
 running = True
 
-win = Screen()
-screenTk = win.getcanvas().winfo_toplevel()
-screenTk.attributes("-fullscreen", True)
-win.bgcolor("#000")
-time.sleep(1.5)
-win.bgpic("Bsodwindows10.png")
-win.listen()
-
 while running:
+    win = Screen()
+    screenTk = win.getcanvas().winfo_toplevel()
+    screenTk.attributes("-fullscreen", True)
+    win.bgcolor("#000")
+    time.sleep(1.5)
+    win.bgpic("Bsodwindows10.png")
+    win.listen()
     win.onkey(exit, 'p')
